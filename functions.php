@@ -17,8 +17,8 @@ function getDatabaseConnection() {
 
 function insertItemsIntoDB($fname, $lname, $years, $team, $points, $ships, $pic){
     $db = getDatabaseConnection();
-    $sql = "INSERT INTO Players (Player_Id, first_name, last_name, nba_years, current_team, carrer_points, championships, picture) 
-            VALUES (NULL, :first_name, :last_name, :nba_years, :current_team, :carrer_points, :championships, :picture)";
+    $sql = "INSERT INTO Players (first_name, last_name, nba_years, current_team, carrer_points, championships, picture) 
+            VALUES (:first_name, :last_name, :nba_years, :current_team, :carrer_points, :championships, :picture)";
     $statement = $db->prepare($sql);
     $statement->execute(array(
             first_name => $fname,
