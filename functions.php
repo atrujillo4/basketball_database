@@ -71,7 +71,7 @@ function getMatchingItems($fname, $lname, $years, $team, $pointsf, $pointst, $sh
     
     $statement = $db->prepare($sql);
     $statement->execute();
-    echo "$sql";
+    //echo "$sql";
     // $items = $statement->fetchAll();
     // return $items;
     // foreach($items as $item){

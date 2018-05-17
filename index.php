@@ -34,7 +34,7 @@
         <script>
             $(document).ready(function(){
                 $("#username").change(function(){
-                    alert("username changed");
+                    //alert("username changed");
                 });
             });
         </script>
